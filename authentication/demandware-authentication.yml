@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html
+docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html
+description: >-
+  Salesforce B2C Commerce (Demandware) authentication documented from the SCAPI
+  and OCAPI authorization guides. No OpenAPI is captured in this repo yet, so this
+  profile is searched from the docs rather than derived from securitySchemes.
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode, clientCredentials]
+  token_format: JWT
+  token_placement: Authorization Bearer header
+schemes:
+- name: SLAS (Shopper Login and API Access Service)
+  type: oauth2
+  standard: OAuth 2.1
+  audience: shopper
+  applies_to: SCAPI Shopper APIs and OCAPI Shopper APIs
+  flows: [authorizationCode, clientCredentials]
+  client_types: [public, private]
+  token: ShopperToken (JWT)
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html
+  notes: >-
+    Grant type depends on client type (public vs private) and shopper auth method.
+    Most clients request tokens via the getAccessToken endpoint.
+- name: Account Manager (AM)
+  type: oauth2
+  audience: admin
+  applies_to: SCAPI Admin APIs and OCAPI Data API
+  flows: [clientCredentials]
+  token: JWT access token
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html
+  notes: >-
+    Admin APIs are secured with Account Manager. Requires an API client registered
+    in Account Manager; the SLAS Admin API/UI requires the SLAS Organization
+    Administrator role.
