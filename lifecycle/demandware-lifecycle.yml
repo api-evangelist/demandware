@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html
+description: >-
+  Versioning, deprecation, status, and release posture for Salesforce B2C Commerce
+  (Demandware). SCAPI is the current API family; OCAPI is deprecated in favor of
+  SCAPI. Salesforce ships three seasonal platform releases per year.
+versioning:
+  scheme: uri-path
+  scapi_version: v1/v2 per API family
+  ocapi_version: version segment (e.g. /s/-/dw/data/vXX_X)
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/references
+release_cadence:
+  scheme: seasonal
+  cadence: three major platform releases per year (Spring / Summer / Winter)
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html
+deprecation:
+  policy_url: https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi
+  notes: >-
+    The Open Commerce API (OCAPI) is deprecated in favor of the B2C Commerce API
+    (SCAPI). New development should target SCAPI; OCAPI reference remains published
+    for existing integrations.
+status_page: https://status.salesforce.com/
+trust: https://trust.salesforce.com/
+deprecated_apis:
+- name: Open Commerce API (OCAPI)
+  humanURL: https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi
+  successor: B2C Commerce API (SCAPI)

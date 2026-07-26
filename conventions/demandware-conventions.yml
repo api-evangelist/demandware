@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/guide
+description: >-
+  Cross-cutting request/response conventions for Salesforce B2C Commerce
+  (Demandware) SCAPI, from the developer guide. Captured from docs; not derived
+  from an in-repo OpenAPI.
+authentication:
+  style: OAuth2 Bearer (JWT)
+  detail: SLAS tokens for Shopper APIs, Account Manager tokens for Admin APIs.
+  ref: authentication/demandware-authentication.yml
+base_url:
+  pattern: https://{shortCode}.api.commercecloud.salesforce.com
+  detail: SCAPI hosts are per-tenant, keyed by an org shortCode; requests carry organizationId and siteId parameters.
+pagination:
+  style: offset-limit
+  params: [offset, limit]
+  response_fields: [count, total, offset, limit]
+  detail: Collection responses expose count/total with offset+limit paging.
+selection:
+  expand: expand parameter selects related sub-resources on Shopper API resources.
+  fields: select parameter narrows the returned representation.
+versioning:
+  style: uri-path
+  ref: lifecycle/demandware-lifecycle.yml
+errors:
+  envelope: SCAPI fault object (type, title, detail) in JSON responses.
+  ref: conformance/demandware-conformance.yml
+idempotency:
+  supported: false
+  detail: SCAPI does not document a general-purpose idempotency-key header.
+rate_limiting:
+  detail: SCAPI enforces per-tenant API rate limits (quotas); limits are tenant/plan specific.

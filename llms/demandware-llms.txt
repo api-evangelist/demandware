@@ -1,0 +1,46 @@
+# Demandware (Salesforce B2C Commerce Cloud)
+
+> Demandware is the cloud commerce platform now sold by Salesforce as Salesforce B2C Commerce Cloud (acquired 2016). Its developer surface is two REST API families: the modern B2C Commerce API (SCAPI) and the deprecated Open Commerce API (OCAPI), with first-party SDKs, CLIs, an MCP server, and OAuth2 (SLAS / Account Manager) authentication.
+
+## APIs
+
+- [B2C Commerce API (SCAPI)](https://developer.salesforce.com/docs/commerce/commerce-api/overview): Shopper APIs, Admin APIs, and Shopper Login and API Access Service (SLAS). OpenAPI, OAuth2/JWT.
+- [Open Commerce API (OCAPI, deprecated)](https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi): Shop, Data, and Meta APIs. Swagger 2.0, OAuth2 via Account Manager.
+
+## Reference
+
+- [SCAPI API Reference](https://developer.salesforce.com/docs/commerce/commerce-api/references)
+- [OCAPI API Explorer](https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html)
+- [Getting Started](https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html)
+- [Authorization guide](https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html)
+- [Shopper Login (SLAS)](https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html)
+
+## Tooling
+
+- [GitHub organization](https://github.com/SalesforceCommerceCloud)
+- [commerce-sdk (npm)](https://www.npmjs.com/package/commerce-sdk)
+- [commerce-sdk-isomorphic (npm)](https://www.npmjs.com/package/commerce-sdk-isomorphic)
+- [PWA Kit](https://github.com/SalesforceCommerceCloud/pwa-kit)
+- [B2C CLI (@salesforce/b2c-cli)](https://www.npmjs.com/package/@salesforce/b2c-cli)
+- [sfcc-ci CLI](https://www.npmjs.com/package/sfcc-ci)
+- [B2C DX MCP server (@salesforce/b2c-dx-mcp)](https://www.npmjs.com/package/@salesforce/b2c-dx-mcp)
+- [Postman: Salesforce Commerce B2C](https://www.postman.com/salesforce-developers/salesforce-developers/documentation/1qkzgik/salesforce-commerce-b2c)
+
+## Operations
+
+- [Status](https://status.salesforce.com/)
+- [Trust & Compliance](https://trust.salesforce.com/)
+- [Pricing](https://www.salesforce.com/products/commerce/pricing/)
+
+## Repo artifacts
+
+- packages/demandware-packages.yml
+- cli/demandware-cli.yml
+- mcp/demandware-mcp.yml
+- skills/_index.yml
+- authentication/demandware-authentication.yml
+- scopes/demandware-scopes.yml
+- conventions/demandware-conventions.yml
+- conformance/demandware-conformance.yml
+- lifecycle/demandware-lifecycle.yml
+- changelog/demandware-changelog.yml

@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+description: >-
+  Salesforce publishes a first-party developer-experience MCP server for B2C
+  Commerce (Demandware) as part of the B2C Developer Tooling monorepo. Distributed
+  on npm as @salesforce/b2c-dx-mcp and intended to be run locally (stdio) by an AI
+  editor / Claude Code alongside the B2C CLI and Tooling SDK.
+server:
+  name: b2c-dx-mcp
+  package: "@salesforce/b2c-dx-mcp"
+  version: 1.9.0
+  transport: stdio
+  install: npx -y @salesforce/b2c-dx-mcp
+  repo: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+notes: >-
+  Bundled with the B2C Developer Tooling release (GA) that also ships the B2C CLI,
+  Tooling SDK, a VS Code extension (developer preview), and packaged Agent Skills
+  / plugins for Claude, VS Code, GitHub Copilot, and Cursor. Tool list not
+  enumerated here to avoid fabrication — see the repository README for the current
+  MCP tool surface.

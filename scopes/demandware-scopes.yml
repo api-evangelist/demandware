@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html
+docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html
+description: >-
+  OAuth scope model for Salesforce B2C Commerce (Demandware). SCAPI encodes access
+  as OAuth scopes carried in the JWT access token. Scopes combine a tenant filter
+  and an API family; the exact scope list is tenant- and API-specific and is
+  managed in Account Manager / SLAS rather than published as a fixed enumeration.
+  Documented from the SCAPI authorization guides; no spec-declared scope map is in
+  the repo, so representative scope families are captured rather than a full list.
+schemes:
+- name: SLAS
+  flows: [authorizationCode, clientCredentials]
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html
+- name: Account Manager
+  flows: [clientCredentials]
+  docs: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html
+scope_families:
+- scope: "sfcc.shopper-*"
+  description: >-
+    Shopper API scope family (e.g. sfcc.shopper-products, sfcc.shopper-baskets,
+    sfcc.shopper-orders, sfcc.shopper-customers) granted via SLAS tokens.
+  audience: shopper
+- scope: "sfcc.<resource>.rw / .r"
+  description: >-
+    Admin API scope family granting read (.r) or read-write (.rw) access to a
+    resource, granted via Account Manager tokens (e.g. sfcc.orders.rw,
+    sfcc.catalogs.rw, sfcc.products.r).
+  audience: admin
+notes: >-
+  Scope strings are tenant-scoped and configured per API client. See the SCAPI
+  authorization guide and each API reference for the exact scope required by an
+  operation.

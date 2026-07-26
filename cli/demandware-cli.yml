@@ -1,0 +1,44 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+description: >-
+  Salesforce B2C Commerce (Demandware) first-party command-line tooling. Two CLIs
+  are published: the newer @salesforce/b2c-cli (oclif-based, part of the B2C
+  Developer Tooling monorepo) and the long-standing sfcc-ci used for CI/CD.
+clis:
+- name: b2c
+  package: "@salesforce/b2c-cli"
+  repo: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+  install:
+  - npm install -g @salesforce/b2c-cli
+  framework: oclif
+  status: GA
+  description: >-
+    Developer-experience CLI for B2C Commerce — cartridge/code deployment,
+    instance operations, jobs, and log tooling. Shares a Tooling SDK and an MCP
+    server for AI editor integrations.
+- name: sfcc-ci
+  package: sfcc-ci
+  repo: https://github.com/SalesforceCommerceCloud/sfcc-ci
+  install:
+  - npm install -g sfcc-ci
+  version: 2.13.0
+  description: >-
+    Continuous-integration CLI for B2C Commerce instances — authenticate via
+    Account Manager (client credentials), import/export site data, activate code
+    versions, run jobs, and tail logs.
+  command_groups:
+  - group: client
+    summary: Manage API client / Account Manager authentication (client:auth).
+  - group: instance
+    summary: Manage and upload code/data to instances (instance:upload, instance:import).
+  - group: code
+    summary: Deploy and activate code versions (code:deploy, code:activate).
+  - group: job
+    summary: Run and monitor jobs (job:run, job:status).
+  - group: sandbox
+    summary: Manage on-demand sandboxes (sandbox:create, sandbox:list).
+  - group: user
+    summary: Manage Account Manager users and roles.
+  - group: slas
+    summary: Manage SLAS tenants and clients (slas:tenant, slas:client).

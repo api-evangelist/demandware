@@ -1,0 +1,90 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/SalesforceCommerceCloud
+description: >-
+  First-party Salesforce B2C Commerce (Demandware) client libraries and tooling.
+  Verified against the public npm registry (registry.npmjs.org) and the
+  SalesforceCommerceCloud GitHub organization. Registry latest versions recorded
+  at fetch time (2026-07-18).
+packages:
+- language: javascript
+  registry: npm
+  name: commerce-sdk
+  url: https://www.npmjs.com/package/commerce-sdk
+  source: https://github.com/SalesforceCommerceCloud/commerce-sdk
+  install: npm install commerce-sdk
+  version: 6.4.0
+  official: true
+  description: Node.js SDK for the B2C Commerce API (SCAPI).
+- language: javascript
+  registry: npm
+  name: commerce-sdk-isomorphic
+  url: https://www.npmjs.com/package/commerce-sdk-isomorphic
+  source: https://github.com/SalesforceCommerceCloud/commerce-sdk-isomorphic
+  install: npm install commerce-sdk-isomorphic
+  version: 5.4.0
+  official: true
+  description: Browser and Node.js JavaScript client for the B2C Commerce API.
+- language: javascript
+  registry: npm
+  name: "@salesforce/commerce-sdk-react"
+  url: https://www.npmjs.com/package/@salesforce/commerce-sdk-react
+  source: https://github.com/SalesforceCommerceCloud/pwa-kit
+  install: npm install @salesforce/commerce-sdk-react
+  version: 5.3.0
+  official: true
+  description: React hooks for fetching data from Commerce Cloud.
+- language: javascript
+  registry: npm
+  name: "@salesforce/pwa-kit-react-sdk"
+  url: https://www.npmjs.com/package/@salesforce/pwa-kit-react-sdk
+  source: https://github.com/SalesforceCommerceCloud/pwa-kit
+  install: npm install @salesforce/pwa-kit-react-sdk
+  version: 3.19.0
+  official: true
+  description: Isomorphic React rendering pipeline for the PWA Kit storefront.
+- language: javascript
+  registry: npm
+  name: "@salesforce/b2c-tooling-sdk"
+  url: https://www.npmjs.com/package/@salesforce/b2c-tooling-sdk
+  source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+  install: npm install @salesforce/b2c-tooling-sdk
+  version: 1.21.0
+  official: true
+  description: Core tooling library backing the B2C Commerce CLI.
+- language: javascript
+  registry: npm
+  name: "@salesforce/b2c-cli"
+  url: https://www.npmjs.com/package/@salesforce/b2c-cli
+  source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+  install: npm install -g @salesforce/b2c-cli
+  version: 1.21.0
+  official: true
+  description: Salesforce B2C Commerce CLI (oclif-based).
+- language: javascript
+  registry: npm
+  name: sfcc-ci
+  url: https://www.npmjs.com/package/sfcc-ci
+  source: https://github.com/SalesforceCommerceCloud/sfcc-ci
+  install: npm install -g sfcc-ci
+  version: 2.13.0
+  official: true
+  description: CLI for Continuous Integration with B2C Commerce instances.
+- language: javascript
+  registry: npm
+  name: "@salesforce/b2c-dx-mcp"
+  url: https://www.npmjs.com/package/@salesforce/b2c-dx-mcp
+  source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+  install: npx -y @salesforce/b2c-dx-mcp
+  version: 1.9.0
+  official: true
+  description: MCP server for B2C Commerce developer experience tools.
+- language: javascript
+  registry: npm
+  name: "@commerce-apps/raml-toolkit"
+  url: https://www.npmjs.com/package/@commerce-apps/raml-toolkit
+  source: https://github.com/SalesforceCommerceCloud/commerce-sdk
+  install: npm install @commerce-apps/raml-toolkit
+  version: 0.8.0
+  official: true
+  description: RAML and OAS tooling used to generate the Commerce Cloud SDK.

@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+description: >-
+  Salesforce ships first-party packaged Agent Skills / plugins for B2C Commerce
+  (Demandware) as part of the B2C Developer Tooling monorepo. These are AI-editor
+  integrations (Claude, VS Code, GitHub Copilot, Cursor) distributed alongside the
+  B2C CLI and the @salesforce/b2c-dx-mcp MCP server. Skill files are published in
+  the provider's own repository; they are referenced here rather than duplicated to
+  avoid drift and to keep the provider's copy authoritative.
+skills:
+- name: B2C Developer Tooling Agent Skills
+  publisher: Salesforce Commerce Cloud
+  source: https://github.com/SalesforceCommerceCloud/b2c-developer-tooling
+  companion_mcp: mcp/demandware-mcp.yml
+  companion_cli: cli/demandware-cli.yml
+  editors: [Claude, VS Code, GitHub Copilot, Cursor]
+  status: GA

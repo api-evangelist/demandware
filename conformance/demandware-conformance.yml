@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html
+description: >-
+  Cross-cutting standards Salesforce B2C Commerce (Demandware) conforms to, from
+  the SCAPI/OCAPI docs and the Salesforce Trust compliance program. Standards
+  asserted from published documentation; not derived from an in-repo OpenAPI.
+standards:
+- id: oauth2
+  conforms: true
+  evidence: SLAS and Account Manager issue OAuth2/OAuth2.1 access tokens (JWT Bearer).
+- id: oauth2.1
+  conforms: true
+  evidence: SLAS grant types are defined by the OAuth 2.1 standard.
+- id: jwt
+  conforms: true
+  evidence: Admin and Shopper APIs authorize with JWT access tokens (RFC 7519).
+- id: openapi
+  conforms: true
+  evidence: SCAPI reference specs published in OpenAPI (converted from RAML).
+- id: rest
+  conforms: true
+  evidence: SCAPI and OCAPI are resource-oriented REST/JSON APIs.
+- id: soc2
+  conforms: true
+  evidence: Salesforce Trust compliance program (SOC 2) — https://trust.salesforce.com/en/compliance/
+- id: iso27001
+  conforms: true
+  evidence: Salesforce Trust compliance program (ISO 27001) — https://trust.salesforce.com/en/compliance/
+- id: pci-dss
+  conforms: true
+  evidence: Salesforce Commerce Cloud PCI DSS compliance — https://trust.salesforce.com/en/compliance/
+- id: gdpr
+  conforms: true
+  evidence: Salesforce Trust privacy/compliance program covers GDPR.
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: SCAPI/OCAPI use their own JSON fault envelope, not application/problem+json.

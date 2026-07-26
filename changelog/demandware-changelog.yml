@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html
+description: >-
+  Salesforce B2C Commerce (Demandware) publishes dated release notes for the B2C
+  Commerce API (SCAPI). The platform follows Salesforce's three-per-year seasonal
+  release train (Spring / Summer / Winter). The live release-notes page is the
+  source of truth; this artifact records the scheme and pointer rather than a full
+  history to avoid drift.
+scheme: seasonal
+changelog_url: https://developer.salesforce.com/docs/commerce/commerce-api/references/about-commerce-api/about.html
+ocapi_changelog_url: https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi
+notes: >-
+  Per-API release notes are versioned within each SCAPI API reference. Entries not
+  transcribed here to avoid fabricating dates/versions; consult the release-notes
+  page for the current window.
