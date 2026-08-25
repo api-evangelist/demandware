@@ -1,16 +1,13 @@
 aid: demandware
 name: Demandware
-description: >-
-  Demandware is the cloud commerce platform now sold by Salesforce as Salesforce
-  B2C Commerce Cloud. Founded in 2004 and taken public on the NYSE (DWRE) in 2012,
-  Demandware was acquired by Salesforce in 2016 for roughly $2.8B and rebranded as
-  Salesforce Commerce Cloud. Its developer surface centers on two REST API families:
-  the modern B2C Commerce API (SCAPI) — Shopper APIs, Admin APIs, and the Shopper
-  Login and API Access Service (SLAS) — published as OpenAPI, and the older Open
-  Commerce API (OCAPI, now deprecated) with its Shop, Data, and Meta APIs. The
-  platform ships first-party SDKs (commerce-sdk, commerce-sdk-isomorphic, PWA Kit),
-  a B2C CLI (sfcc-ci and the newer @salesforce/b2c-cli), a developer-experience MCP
-  server, packaged Agent Skills, and Account Manager / SLAS OAuth2 authentication.
+description: 'Demandware is the cloud commerce platform now sold by Salesforce as Salesforce B2C Commerce Cloud.
+  Founded in 2004 and taken public on the NYSE (DWRE) in 2012, Demandware was acquired by Salesforce in 2016 for
+  roughly $2.8B and rebranded as Salesforce Commerce Cloud. Its developer surface centers on two REST API families:
+  the modern B2C Commerce API (SCAPI) — Shopper APIs, Admin APIs, and the Shopper Login and API Access Service (SLAS)
+  — published as OpenAPI, and the older Open Commerce API (OCAPI, now deprecated) with its Shop, Data, and Meta
+  APIs. The platform ships first-party SDKs (commerce-sdk, commerce-sdk-isomorphic, PWA Kit), a B2C CLI (sfcc-ci
+  and the newer @salesforce/b2c-cli), a developer-experience MCP server, packaged Agent Skills, and Account Manager
+  / SLAS OAuth2 authentication.'
 url: https://raw.githubusercontent.com/api-evangelist/demandware/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -33,7 +30,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-08-21'
 image: https://developer.salesforce.com/resources2/logos/salesforce-developers-logo.png
 tags:
 - Company
@@ -66,11 +63,9 @@ maintainers:
   email: info@apis.io
 apis:
 - name: B2C Commerce API (SCAPI)
-  description: >-
-    The modern Salesforce Commerce API (SCAPI) — Shopper APIs (products, search,
-    baskets, orders, customers), Admin APIs, and the Shopper Login and API Access
-    Service (SLAS). Published as OpenAPI, secured with OAuth2 (SLAS for Shopper
-    APIs, Account Manager for Admin APIs) using JWT Bearer access tokens.
+  description: The modern Salesforce Commerce API (SCAPI) — Shopper APIs (products, search, baskets, orders, customers),
+    Admin APIs, and the Shopper Login and API Access Service (SLAS). Published as OpenAPI, secured with OAuth2 (SLAS
+    for Shopper APIs, Account Manager for Admin APIs) using JWT Bearer access tokens.
   humanURL: https://developer.salesforce.com/docs/commerce/commerce-api/overview
   baseURL: https://api.commercecloud.salesforce.com
   properties:
@@ -79,17 +74,21 @@ apis:
   - type: GettingStarted
     url: https://developer.salesforce.com/docs/commerce/commerce-api/guide/get-started.html
 - name: Open Commerce API (OCAPI)
-  description: >-
-    The legacy Open Commerce API (OCAPI, deprecated in favor of SCAPI) — the Shop
-    API for shopper interactions, the Data API for CRUD against instance data, and
-    the Meta API for retrieving formal API descriptions. Swagger 2.0 based, secured
-    with OAuth2 via Account Manager.
+  description: The legacy Open Commerce API (OCAPI, deprecated in favor of SCAPI) — the Shop API for shopper interactions,
+    the Data API for CRUD against instance data, and the Meta API for retrieving formal API descriptions. Swagger
+    2.0 based, secured with OAuth2 via Account Manager.
   humanURL: https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi
   baseURL: https://api.commercecloud.salesforce.com
   properties:
   - type: APIReference
     url: https://developer.salesforce.com/docs/commerce/b2c-commerce/references/b2c-commerce-ocapi/apiexplorer.html
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/salesforce/
+  name: Salesforce
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
+  x-acquired: 2016
 - type: VulnerabilityDisclosure
   url: security/demandware-vulnerability-disclosure.yml
 - type: Security
@@ -154,8 +153,17 @@ common:
   url: https://trust.salesforce.com/
 - type: LLMsTxt
   url: llms/demandware-llms.txt
+- type: Subsidiary
+  url: https://apis.io/providers/cquotient/
+  name: CQuotient
+  x-relationship: acquisition
+  x-generated-by: salesforce-family:2026-08-21
+  x-acquired: 2013
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-parent: salesforce
+x-relationship: acquisition
+x-acquired: 2016
