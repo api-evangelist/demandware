@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/demandware/integrations
+- https://n8n.io/integrations/demandware/
+- https://composio.dev/toolkits/demandware
+- https://monid.ai/tools/demandware
+checked:
+- https://composio.dev/toolkits/demandware
+- https://monid.ai/tools/demandware
+- https://n8n.io/integrations/demandware/
+- https://zapier.com/apps/demandware/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
